@@ -32,3 +32,6 @@ hs_err_pid*
 
 # NetBeans project files
 nbproject/
+
+bin/
+target/
