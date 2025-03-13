@@ -38,11 +38,11 @@ public class Match<T extends ParticipantAbstract> {
         this.participant2 = participant2;
     }
 
-    public T getwinner() {
+    public T getWinner() {
         return winner;
     }
 
-    public void setwinner(T winner) {
+    public void setWinner(T winner) {
         this.winner = winner;
     }
 

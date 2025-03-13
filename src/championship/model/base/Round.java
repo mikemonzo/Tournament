@@ -55,7 +55,7 @@ public class Round<T extends ParticipantAbstract> implements Comparable<Round<T>
         this.isFinished = true;
         
         for (Match<T> match : matches) {
-            this.isFinished &= (match.getwinner() != null);
+            this.isFinished &= (match.getWinner() != null);
         }
         if(this.isFinished) {
             extractWinners();
@@ -70,7 +70,7 @@ public class Round<T extends ParticipantAbstract> implements Comparable<Round<T>
 
     private void extractWinners() {
         for (Match<T> match : matches) {
-            winners.add(match.getwinner());
+            winners.add(match.getWinner());
         }
     }
 
