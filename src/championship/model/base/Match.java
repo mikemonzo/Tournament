@@ -4,7 +4,7 @@ public class Match<T extends ParticipantAbstract> {
 
     private T participant1;
     private T participant2;
-    private T winer;
+    private T winner;
     private T loser;
 
     public Match() {
@@ -15,10 +15,10 @@ public class Match<T extends ParticipantAbstract> {
         this.participant2 = participant2;
     }
 
-    public Match(T participant1, T participant2, T winer, T loser) {
+    public Match(T participant1, T participant2, T winner, T loser) {
         this.participant1 = participant1;
         this.participant2 = participant2;
-        this.winer = winer;
+        this.winner = winner;
         this.loser = loser;
     }
 
@@ -38,12 +38,12 @@ public class Match<T extends ParticipantAbstract> {
         this.participant2 = participant2;
     }
 
-    public T getWiner() {
-        return winer;
+    public T getwinner() {
+        return winner;
     }
 
-    public void setWiner(T winer) {
-        this.winer = winer;
+    public void setwinner(T winner) {
+        this.winner = winner;
     }
 
     public T getLoser() {
@@ -54,15 +54,13 @@ public class Match<T extends ParticipantAbstract> {
         this.loser = loser;
     }
 
-    
-
     @Override
     public int hashCode() {
         final int prime = 31;
         int result = 1;
         result = prime * result + ((participant1 == null) ? 0 : participant1.hashCode());
         result = prime * result + ((participant2 == null) ? 0 : participant2.hashCode());
-        result = prime * result + ((winer == null) ? 0 : winer.hashCode());
+        result = prime * result + ((winner == null) ? 0 : winner.hashCode());
         result = prime * result + ((loser == null) ? 0 : loser.hashCode());
         return result;
     }
@@ -86,10 +84,10 @@ public class Match<T extends ParticipantAbstract> {
                 return false;
         } else if (!participant2.equals(other.participant2))
             return false;
-        if (winer == null) {
-            if (other.winer != null)
+        if (winner == null) {
+            if (other.winner != null)
                 return false;
-        } else if (!winer.equals(other.winer))
+        } else if (!winner.equals(other.winner))
             return false;
         if (loser == null) {
             if (other.loser != null)
@@ -101,7 +99,7 @@ public class Match<T extends ParticipantAbstract> {
 
     @Override
     public String toString() {
-        return "Match [participant1=" + participant1 + ", participant2=" + participant2 + ", winer=" + winer + ", loser="
+        return "Match [participant1=" + participant1 + ", participant2=" + participant2 + ", winner=" + winner + ", loser="
                 + loser + "]";
     }
 }
