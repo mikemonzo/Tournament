@@ -2,19 +2,19 @@ package championship.model.padel;
 
 import championship.model.base.ParticipantAbstract;
 
-public class PadelPlayer extends ParticipantAbstract {
+public class PairPadel extends ParticipantAbstract {
 
     private String player1Name, player2Name;
 
-    public PadelPlayer() {
+    public PairPadel() {
         super();
     }
 
-    public PadelPlayer(String name) {
+    public PairPadel(String name) {
         super(name);
     }
 
-    public PadelPlayer(String name, String player1Name, String player2Name) {
+    public PairPadel(String name, String player1Name, String player2Name) {
         super(name);
         this.player1Name = player1Name;
         this.player2Name = player2Name;
@@ -58,7 +58,7 @@ public class PadelPlayer extends ParticipantAbstract {
             return false;
         if (getClass() != obj.getClass())
             return false;
-        PadelPlayer other = (PadelPlayer) obj;
+        PairPadel other = (PairPadel) obj;
         if (player1Name == null) {
             if (other.player1Name != null)
                 return false;
@@ -74,7 +74,7 @@ public class PadelPlayer extends ParticipantAbstract {
 
     @Override
     public String toString() {
-        return "PadelPlayer [player1Name=" + player1Name + ", player2Name=" + player2Name + "]";
+        return "PairPadel [player1Name=" + player1Name + ", player2Name=" + player2Name + "]";
     }
 
 }

@@ -16,7 +16,6 @@ public class Round<T extends ParticipantAbstract> implements Comparable<Round<T>
         this.title = title;
         this.matches = matches;
         this.isFinal = isFinal;
-        this.isFinished = false;
     }
     
     public int getNumber() {
