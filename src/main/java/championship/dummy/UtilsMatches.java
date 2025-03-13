@@ -1,11 +1,11 @@
-package com.example.championship.dummy;
+package championship.dummy;
 
 import java.util.List;
 import java.util.Random;
 
-import com.example.championship.model.base.Match;
-import com.example.championship.model.base.ParticipantAbstract;
-import com.example.championship.model.base.Round;
+import championship.model.base.Match;
+import championship.model.base.ParticipantAbstract;
+import championship.model.base.Round;
 
 public interface UtilsMatches {
 

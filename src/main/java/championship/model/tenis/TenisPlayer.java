@@ -1,6 +1,6 @@
-package com.example.championship.model.tenis;
+package championship.model.tenis;
 
-import com.example.championship.model.base.ParticipantAbstract;
+import championship.model.base.ParticipantAbstract;
 
 public class TenisPlayer extends ParticipantAbstract{
 

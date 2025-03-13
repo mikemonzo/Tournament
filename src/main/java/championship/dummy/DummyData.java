@@ -1,13 +1,14 @@
-package com.example.championship.dummy;
+package championship.dummy;
 
 import java.util.ArrayList;
 import java.util.List;
 
-import com.example.championship.model.base.ParticipantAbstract;
-import com.example.championship.model.base.Round;
-import com.example.championship.model.padel.PairPadel;
-import com.example.championship.model.tenis.TenisPlayer;
 import com.github.javafaker.Faker;
+
+import championship.model.base.ParticipantAbstract;
+import championship.model.base.Round;
+import championship.model.padel.PairPadel;
+import championship.model.tenis.TenisPlayer;
 
 public class DummyData {
 

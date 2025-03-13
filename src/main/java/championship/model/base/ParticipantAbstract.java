@@ -1,4 +1,4 @@
-package com.example.championship.model.base;
+package championship.model.base;
 
 public class ParticipantAbstract {
     private String name ;

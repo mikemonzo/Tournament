@@ -1,4 +1,4 @@
-package com.example.championship.model.base;
+package championship.model.base;
 
 import java.util.List;
 import java.util.SortedSet;

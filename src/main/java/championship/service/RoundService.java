@@ -1,14 +1,14 @@
-package com.example.championship.service;
+package championship.service;
 
 import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 import java.util.Random;
 
-import com.example.championship.model.base.Match;
-import com.example.championship.model.base.ParticipantAbstract;
-import com.example.championship.model.base.Round;
-import com.example.championship.model.base.Tournament;
+import championship.model.base.Match;
+import championship.model.base.ParticipantAbstract;
+import championship.model.base.Round;
+import championship.model.base.Tournament;
 
 public class RoundService<T extends ParticipantAbstract> {
     
