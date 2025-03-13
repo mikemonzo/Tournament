@@ -1,9 +1,11 @@
-import championship.dummy.DummyData;
-import championship.model.base.Round;
-import championship.model.base.Tournament;
-import championship.model.padel.PairPadel;
-import championship.model.tenis.TenisPlayer;
-import championship.service.RoundService;
+package com.example;
+
+import com.example.championship.dummy.DummyData;
+import com.example.championship.model.base.Round;
+import com.example.championship.model.base.Tournament;
+import com.example.championship.model.padel.PairPadel;
+import com.example.championship.model.tenis.TenisPlayer;
+import com.example.championship.service.RoundService;
 
 public class App {
     public static void main(String[] args) throws Exception {

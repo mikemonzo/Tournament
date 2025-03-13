@@ -1,4 +1,4 @@
-package championship.model.base;
+package com.example.championship.model.base;
 
 public class Match<T extends ParticipantAbstract> {
 

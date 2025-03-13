@@ -1,4 +1,4 @@
-package championship.model.base;
+package com.example.championship.model.base;
 
 import java.util.ArrayList;
 import java.util.List;

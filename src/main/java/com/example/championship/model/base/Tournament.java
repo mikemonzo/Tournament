@@ -1,4 +1,4 @@
-package championship.model.base;
+package com.example.championship.model.base;
 
 import java.util.List;
 import java.util.SortedSet;
@@ -35,15 +35,15 @@ public class Tournament<T extends ParticipantAbstract> {
     }
 
     private void viewRound(Round<T> round){
-        System.out.println("Round Nº %d - %s".formatted(round.getNumber(), round.getTitle().toUpperCase()));
+        System.out.println(String.format("Round Nº %d - %s",round.getNumber(), round.getTitle().toUpperCase()));
         System.out.println("=====================================");
         System.out.println();
         System.out.println("---- Matches ----");
         System.out.println();
         for (Match<T> match : round.getMatches()){
-            System.out.print("J1: %s vs J2: %s".formatted(match.getParticipant1().getName(), match.getParticipant2().getName()));
+            System.out.print(String.format("J1: %s vs J2: %s", match.getParticipant1().getName(), match.getParticipant2().getName()));
             if (match.getWinner() != null){
-                System.out.println(" Winner: %s".formatted(match.getWinner().getName()));
+                System.out.println(String.format(" Winner: %s",match.getWinner().getName()));
             }
             System.out.println();
         }

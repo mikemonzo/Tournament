@@ -1,6 +1,6 @@
-package championship.model.padel;
+package com.example.championship.model.padel;
 
-import championship.model.base.ParticipantAbstract;
+import com.example.championship.model.base.ParticipantAbstract;
 
 public class PairPadel extends ParticipantAbstract {
 
@@ -22,7 +22,7 @@ public class PairPadel extends ParticipantAbstract {
 
     @Override
     public String getName() {
-        return "%s (%s, %s)".formatted(super.getName(), player1Name, player2Name);
+        return String.format("%s (%s, %s)",super.getName(), player1Name, player2Name);
     }
 
     public String getPlayer1Name() {
