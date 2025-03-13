@@ -54,6 +54,8 @@ public class Match<T extends ParticipantAbstract> {
         this.loser = loser;
     }
 
+    
+
     @Override
     public int hashCode() {
         final int prime = 31;
@@ -73,7 +75,7 @@ public class Match<T extends ParticipantAbstract> {
             return false;
         if (getClass() != obj.getClass())
             return false;
-        Match other = (Match) obj;
+        Match<?> other = (Match<?>) obj;
         if (participant1 == null) {
             if (other.participant1 != null)
                 return false;
