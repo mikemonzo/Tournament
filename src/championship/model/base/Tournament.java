@@ -35,7 +35,7 @@ public class Tournament<T extends ParticipantAbstract> {
     }
 
     private void viewRound(Round<T> round){
-        System.out.println("Round Nº %d - s%".formatted(round.getNumber(), round.getTitle().toUpperCase()));
+        System.out.println("Round Nº %d - %s".formatted(round.getNumber(), round.getTitle().toUpperCase()));
         System.out.println("=====================================");
         System.out.println();
         System.out.println("---- Matches ----");

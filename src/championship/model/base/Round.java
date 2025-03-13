@@ -1,5 +1,6 @@
 package championship.model.base;
 
+import java.util.ArrayList;
 import java.util.List;
 
 public class Round<T extends ParticipantAbstract> implements Comparable<Round<T>> {
@@ -16,6 +17,7 @@ public class Round<T extends ParticipantAbstract> implements Comparable<Round<T>
         this.title = title;
         this.matches = matches;
         this.isFinal = isFinal;
+        this.winners = new ArrayList<>();
     }
     
     public int getNumber() {
